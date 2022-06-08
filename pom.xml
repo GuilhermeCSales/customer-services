@@ -6,7 +6,12 @@
 
     <groupId>com.salesdev</groupId>
     <artifactId>customerservices</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>customer</module>
+    </modules>
 
     <name>customerservices</name>
     <url>https://www.example.com</url>
