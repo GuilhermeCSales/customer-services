@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -26,6 +27,6 @@ public class FraudCheckHistory {
     private Integer id;
     private Integer customerId;
     private Boolean isFraudster;
-    private LocalDate createdAt;
+    private LocalDateTime createdAt;
 
 }

@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Service
 @AllArgsConstructor
@@ -16,7 +17,7 @@ public class FraudCheckService {
                 FraudCheckHistory.builder()
                         .customerId(customerId)
                         .isFraudster(false)
-                        .createdAt(LocalDate.now())
+                        .createdAt(LocalDateTime.now())
                         .build()
         );
         return false;
