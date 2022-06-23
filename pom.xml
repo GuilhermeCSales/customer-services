@@ -89,7 +89,9 @@
                     <version>3.2.1</version>
                     <configuration>
                         <from>
-                            <image>eclipse-temurin:17@sha256:2b47a8ea946ce1e5365a1562414ed576e378b7b670cadff3fb98ebecf2890cdc</image>
+                            <image>
+                                eclipse-temurin:17@sha256:2b47a8ea946ce1e5365a1562414ed576e378b7b670cadff3fb98ebecf2890cdc
+                            </image>
                             <platforms>
                                 <platform>
                                     <architecture>arm64</architecture>
@@ -107,6 +109,14 @@
                             </tags>
                         </to>
                     </configuration>
+                    <executions>
+                        <execution>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>build</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
             </plugins>
         </pluginManagement>
